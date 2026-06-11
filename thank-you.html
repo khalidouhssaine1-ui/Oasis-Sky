@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Merci | Oasis Sky Camp Agafay</title>
+    <meta
+      name="description"
+      content="Merci pour votre demande de réservation Oasis Sky Camp Agafay."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1011920614566367');
+      fbq('track', 'PageView');
+      fbq('track', 'Lead');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1011920614566367&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body class="thank-you-page">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Oasis Sky Camp">
+        <img src="Logo Oasis Sky.jpg" alt="Logo Oasis Sky Camp" />
+        <span>Oasis Sky Camp</span>
+      </a>
+      <nav class="header-actions" aria-label="Navigation principale">
+        <a href="index.html#avis">Avis clients</a>
+        <a href="index.html#reservation" class="small-cta">Réserver</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section thank-you-section" aria-labelledby="thank-you-title">
+        <div class="thank-you-card">
+          <p class="eyebrow">Demande reçue</p>
+          <h1 id="thank-you-title">Merci, votre réservation est presque confirmée</h1>
+          <p>
+            Votre message WhatsApp est prêt avec les détails de votre demande.
+            Envoyez-le à notre équipe pour confirmer la disponibilité.
+          </p>
+          <div class="thank-you-actions">
+            <a
+              class="primary-button"
+              id="thank-you-whatsapp"
+              href="https://wa.me/212623164930?text=Bonjour%20Oasis%20Sky%20Camp%2C%20je%20viens%20de%20l'offre%20Oasis%20Sky%20Agafay%20%C3%A0%20350%20Dhs%20et%20je%20veux%20r%C3%A9server."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Envoyer le message WhatsApp
+            </a>
+            <a class="secondary-button" href="index.html">Retour à l'offre</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      try {
+        var bookingUrl = sessionStorage.getItem("oasisBookingUrl");
+        var button = document.querySelector("#thank-you-whatsapp");
+        if (bookingUrl && button) {
+          button.href = bookingUrl;
+        }
+      } catch {}
+    </script>
+  </body>
+</html>
